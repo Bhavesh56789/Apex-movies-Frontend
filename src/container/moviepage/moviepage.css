@@ -1,0 +1,261 @@
+/*-- header --*/
+html,
+body {
+  font-family: 'Lora', serif;
+  background: #fff;
+  font-size: 100%;
+}
+/*-- header --*/
+.header-bg {
+  background: no-repeat 0px 0p;
+  background-size: 40em;
+  position: relative;
+  background-position: right;
+}
+.header-layer {
+  background: rgba(0, 0, 0, 0.83);
+  min-height: 700px;
+}
+.header-top {
+  padding-top: 2em;
+  padding-right: 15em;
+}
+
+.head-info {
+  position: relative;
+}
+.head-info p {
+  color: #fff;
+  margin: 2em 0 3em 0;
+}
+
+#Title {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+#avg_rating {
+  margin-top: 0px;
+  color: #8197a4;
+  display: inline;
+  font-size: 17px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#runtime {
+  display: inline;
+  font-size: 17px;
+  color: #8197a4;
+}
+
+#Genre {
+  font-size: 18px;
+  color: #8197a4;
+}
+#Overview {
+  width: 50%;
+  margin-right: 20px;
+  font-size: 20px;
+}
+#starring {
+  font-size: 18px;
+  color: #8197a4;
+}
+
+#Languages {
+  font-size: 18px;
+  color: #8197a4;
+}
+#release-year {
+  font-size: 17px;
+  display: inline;
+  margin-left: 20px;
+  color: #8197a4;
+}
+.botton a {
+  padding: 0.8em 3em;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background: #fa694e;
+  color: #fff;
+  border: solid 1px #fa694e;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.botton a:hover {
+  color: #fa694e;
+  background: none;
+  text-decoration: none;
+  border: solid 1px #fff;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+/* Rating */
+
+.rate {
+  width: 50%;
+  position: absolute;
+  display: inline;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '\2605';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+/* @media (max-width:768px){
+	#Title{
+		color:#FFF;
+		padding-bottom: 20px;
+		font-size: 25px;
+		font-family: 'Montserrat', sans-serif;
+		text-align: left;
+		line-height: 20px;
+		margin-bottom:0px;
+		font-weight:400;
+	}
+	#Overview{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 20px;
+		font-size: 18px;
+	}
+	#Languages{
+		width: 150%;
+		font-size:18px;
+		color: #8197a4;
+		padding-bottom: 2.5em;
+	
+	}
+	.head-info {
+		top: 31%;
+		left: 17%;
+		width: 63%;
+	}
+	.head-info p {
+		margin: 1.5em 0 2em 0;
+	}
+	.header-layer {
+		min-height: 575px;
+	}
+	.header-bg {
+		min-height: 575px;
+		background-size: contain;
+	}
+	
+
+}
+
+@media (max-width:480px){
+	
+	.head-info h1 {
+		font-size: 43px;
+	}
+	.head-info {
+		top: 31%;
+		left: 11%;
+		width: 75%;
+	}
+	.botton a {
+		padding: .8em 2em;
+		font-size: 16px;
+	}
+	.header-layer {
+		min-height: 440px;
+	}
+	.header-bg {
+		min-height: 440px;
+	}
+	
+}
+@media (max-width:320px){
+	
+	#Title{
+		color:#FFF;
+		padding-bottom: 20px;
+		font-size: 20px;
+		width: 300%;
+		font-family: 'Montserrat', sans-serif;
+		text-align: left;
+		line-height: 20px;
+		margin-bottom:0px;
+		font-weight:400;
+	}
+	#Overview{
+		width: 600%;
+		margin-right: 20px;
+		font-size: 18px;
+	}
+	#Languages{
+		width: 150%;
+		font-size:18px;
+		color: #8197a4;
+		padding-bottom: 2.5em;
+	
+	}
+	#avg_rating{
+		width: 2rem;
+		margin-bottom:10px ;
+	}
+	.header-top {
+		padding-top: 1em;
+	}
+
+	.head-info {
+		width: 82%;
+	}
+	.head-info h1 {
+		font-size: 30px;
+	}
+	.head-info p {
+		font-size: 18px;
+		margin: 1em 0 1em 0;
+	}
+	.botton a {
+		padding: .5em 1em;
+	}
+	.header-layer {
+		min-height: 330px;
+	}
+	.header-bg {
+		min-height: 330px;
+	}
+	
+} */

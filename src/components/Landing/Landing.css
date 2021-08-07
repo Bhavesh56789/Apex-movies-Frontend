@@ -1,0 +1,168 @@
+/* body {
+  font-family: 'Montserrat-Black';
+  text-align: center;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat';
+
+  margin: 0.75em 0 0.25em;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.break {
+  height: 8px;
+  background-color: #222;
+}
+
+/* Headings */
+.im1 {
+  background-image: url('img.jpg');
+  height: 52vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #fff;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  background-image: url('img.jpg');
+  width: 100%;
+}
+
+.white-section {
+  background-color: #fff;
+}
+.black-section {
+  background-color: black;
+}
+
+/* Download Buttons */
+
+.btn {
+  margin: 0 10px 0 0;
+}
+
+.download-button {
+  margin-top: 25px;
+  margin-left: 160px;
+  display: block;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title Image */
+
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+  display: inline-block;
+}
+
+.feature-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-description {
+  font-size: 1.625rem;
+  font-weight: 400;
+  display: inline;
+}
+.feaure-image {
+  display: inline;
+}
+
+/* footer section */
+
+#footer {
+  text-align: center;
+  background-color: #fff;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 650px) {
+  .im1 {
+    height: 21vh;
+  }
+  .big-heading {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+    font-weight: 400 !important;
+  }
+  .feature-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .feature-description {
+    font-size: 0.89rem;
+    font-weight: 400;
+    display: inline;
+    text-align: center;
+    display: block;
+  }
+  .break {
+    width: inherit;
+    margin-left: 0% !important;
+  }
+}

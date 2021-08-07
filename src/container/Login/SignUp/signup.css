@@ -1,0 +1,77 @@
+.loginpage {
+  background: url(../../../assets/loginback.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+}
+.lg {
+  background-color: rgb(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+.submit {
+  opacity: 1 !important;
+  background-color: red !important;
+  border: none !important;
+}
+
+.lgn {
+  margin-top: 80px;
+  justify-content: center;
+}
+
+.loginform {
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 4px;
+  width: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+/* ::after {
+  content: '';
+  height: 120px;
+  display: block;
+} */
+
+@media (min-width: 200px) and (min-height: 200px) and (max-width: 767px) {
+  .loginpage {
+    background-image: none;
+    background-color: rgb(0, 0, 0, 1);
+    position: fixed;
+  }
+  .loginform {
+    max-width: 100%;
+    height: 850px;
+    min-height: 100vh;
+  }
+  .loginpage::before {
+    height: 0px;
+    display: block;
+  }
+  .lgn {
+    justify-content: start;
+    margin-top: 0px;
+  }
+  .brand {
+    margin-left: 10px;
+  }
+}
+
+/* @media (min-width: 500px) and (min-height: 401px) {
+  .loginform {
+    width: 50vh;
+    max-height: 35vh;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+  .loginform {
+    width: 50vh;
+    height: 95vh;
+  }
+} */

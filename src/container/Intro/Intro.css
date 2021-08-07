@@ -1,0 +1,58 @@
+/* #room {
+  background: url('../../assets/room.jpg') no-repeat;
+  height: 700px;
+}
+
+#adam {
+  background-image: url('../../assets/wal.jpg');
+  width: 105px;
+  height: 203px;
+  margin-top: -10%;
+  animation: walk-east 1s steps(8) 9, walk 9s linear forwards;
+}
+@keyframes walk-east {
+  from {
+    background-position: 2px;
+  }
+  to {
+    background-position: -800px;
+  }
+}
+
+@keyframes walk {
+  from {
+    transform: rotate(-35deg) translateX(-200px) translateY(-70px);
+  }
+  to {
+    transform: translateX(700px) rotate(-5deg) translateY(-100px);
+  }
+} */
+#room {
+  background: url('../../assets/room.jpg') no-repeat;
+  height: 700px;
+}
+
+#adam {
+  background-image: url('../../assets/man.png');
+  width: 153px;
+  height: 500px;
+  margin-top: -10%;
+  animation: walk-east 0.5s steps(3) infinite, walk 9s linear infinite;
+}
+@keyframes walk-east {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -459px;
+  }
+}
+
+@keyframes walk {
+  from {
+    transform: rotate(-35deg) translateX(-200px) translateY(-70px);
+  }
+  to {
+    transform: translateX(700px) rotate(-5deg) translateY(-100px);
+  }
+}
